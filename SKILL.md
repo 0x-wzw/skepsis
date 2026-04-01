@@ -1,15 +1,17 @@
 ---
-name: logic-questioning-model
+name: skepsis
 version: 1.0.0
-description: "Octavian's Logic Questioning Framework — Three-layer inquiry with OctoberXin intelligence pipeline for research framing"
+description: "SKEPSIS: Surgical inquiry framework for research — three-layer interrogation with OctoberXin intelligence pipeline"
 author: Octavian / OctoberXin
-keywords: [research, framing, octavian, octoberxin, inquiry, mental-models, debate-mapping]
+keywords: [skepsis, research, framing, inquiry, interrogation, mental-models, debate-mapping]
 metadata:
   openclaw:
-    emoji: "🎯"
+    emoji: "⚔️"
 ---
 
-# Logic Questioning Model (LQM)
+# SKEPSIS — Surgical Inquiry Framework
+
+**Greek: σκέψις · inquiry, examination, consideration**
 
 **A research interrogation framework that surfaces intellectual battlefields, incentives, and blind spots before synthesis.**
 
@@ -246,7 +248,7 @@ Adjacent: Game theory, cognitive neuroscience
 
 - Skill file: `~/.openclaw/workspace/skills/logic-questioning-model/SKILL.md`
 - Research logs: `memory/research/YYYY-MM-DD-{topic-slug}.md`
-- GitHub: https://github.com/0x-wzw/logic-questioning-model
+- GitHub (private): https://github.com/0x-wzw/skepsis
 
 ---
 
