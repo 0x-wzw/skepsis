@@ -1,64 +1,58 @@
 ---
 name: skepsis
-version: 1.0.0
-description: "SKEPSIS: Surgical inquiry framework for research — three-layer interrogation with OctoberXin intelligence pipeline"
-author: Octavian / OctoberXin
-keywords: [skepsis, research, framing, inquiry, interrogation, mental-models, debate-mapping]
-metadata:
-  openclaw:
-    emoji: "⚔️"
+description: Surgical inquiry framework for research. Use before synthesis on complex, multidisciplinary, or high-stakes topics where sources disagree and blind spots are likely. Surfaces mental models, active debates, hidden incentives, and shadow variables. Not for simple factual lookups, tutorials, or quick summaries.
 ---
 
 # SKEPSIS — Surgical Inquiry Framework
 
 **Greek: σκέψις · inquiry, examination, consideration**
 
-**A research interrogation framework that surfaces intellectual battlefields, incentives, and blind spots before synthesis.**
-
-By Octavian, with OctoberXin's intelligence pipeline.
+A research interrogation framework that maps the intellectual battlefield — mental models, live debates, hidden incentives, and blind spots — before you synthesize an answer.
 
 ---
 
 ## When to Use
 
 | Scenario | Example |
-|----------|---------|
+|---|---|
 | Complex, multidisciplinary topics | "AI agent infrastructure" |
-| Contradictory/shallow search results | "What's really happening with DeFi regulation?" |
-| Need to map intellectual battlefield | "Who disagrees about AGI timelines and why?" |
-| High-stakes decision | Policy analysis, investment Thesis, strategic intelligence |
+| Contradictory or shallow search results | "What is actually happening with DeFi regulation?" |
+| Mapping who disagrees and why | "Why do experts split on AGI timelines?" |
+| High-stakes decisions | Policy analysis, investment thesis, strategic intelligence |
 
-**Don't use for:** Simple factual lookups, step-by-step tutorials, quick summaries.
+**Do not use for:** simple factual lookups, step-by-step tutorials, or quick summaries.
 
 ---
 
 ## Prerequisites
 
-- Tavily MCP or equivalent research capability
-- Memory indexing for source tracking
-- 10-20 minutes for full execution
+- A web search or research capability (any provider)
+- A way to persist notes and cite sources across steps
+- 10–20 minutes for the full protocol
 
 ---
 
 ## Architecture
 
-### Version 1: Three-Layer Core
+### v1 — Three-Layer Core
 
 | Layer | Question | Output |
-|-------|----------|--------|
-| **L1** | Top 5 thought leaders' mental models? | Mental models table |
-| **L2** | Most active/controversial debates? | Debate mapping table |
-| **L3** | Non-obvious areas to consider? | Expansion bullet list |
+|---|---|---|
+| **L1** | What are the top thought leaders' mental models? | Mental models table |
+| **L2** | What are the most active or controversial debates? | Debate mapping table |
+| **L3** | What non-obvious areas should be considered? | Expansion list |
 
-### Version 2: Full Interrogator (+ Layer 0, Incentives, Shadow Variables)
+### v2 — Full Interrogator
+
+Adds Layer 0 (falsify the premise first), incentive tracking on L1/L2, and Layer 3 shadow variables. Layer 4 is the synthesis pipeline.
 
 | Layer | Focus | Key Addition |
-|-------|-------|--------------|
-| **L0** | Socratic Destruction | Falsify your premise first |
-| **L1** | Assumption Archaeology | Surface WHO BENEFITS |
-| **L2** | Live Ammunition | Narrative power + unsaid motives |
-| **L3** | Shadow Variables | Failed attempts, geographic blindspots |
-| **L4** | Intelligence Pipeline | Signal filtering + contrarian sizing |
+|---|---|---|
+| **L0** | Socratic destruction | Falsify your premise first |
+| **L1** | Assumption archaeology | Surface *who benefits* |
+| **L2** | Live ammunition | Narrative power and unsaid motives |
+| **L3** | Shadow variables | Failed attempts, geographic blind spots |
+| **L4** | Synthesis pipeline | Signal filtering, contrarian sizing |
 
 ---
 
@@ -66,20 +60,20 @@ By Octavian, with OctoberXin's intelligence pipeline.
 
 ### Quick Start (v1)
 
-```python
-# Phase 1: Mental Models
-search("[topic] top thought leaders mental models")
+```
+# Phase 1 — Mental Models
+search("<topic> top thought leaders mental models")
 tabulate(name, framework, assumptions, blind_spots, conflicts)
 
-# Phase 2: Debate Mapping  
-search("[topic] controversial debates 2024 2025")
+# Phase 2 — Debate Mapping
+search("<topic> controversial debates <year>")
 tabulate(fault_line, position_a, position_b, evidence, actors)
 
-# Phase 3: Non-Obvious Expansion
-search("[topic] cross-domain analogies")
+# Phase 3 — Non-Obvious Expansion
+search("<topic> cross-domain analogies")
 list(cross_domain, second_order, hidden_variables, adjacent)
 
-# Phase 4: OctoberXin Synthesis
+# Phase 4 — Synthesis
 rank_sources(signal_to_noise)
 weight_controversy(symmetry_score)
 validate_cross_reference(convergence_points)
@@ -87,184 +81,163 @@ validate_cross_reference(convergence_points)
 
 ### Full Protocol (v2)
 
-**Step 1: Layer 0 — Socratic Destruction (5 min)**
+**Step 1 — Layer 0: Socratic Destruction (≈5 min)**
 
-Answer these before any research:
+Answer these *before* searching:
 
 | Question | Purpose |
-|----------|---------|
-| "What would make the opposite true?" | Forces falsification mindset |
-| "What am I NOT asking (uncomfortable)?" | Surfaces taboo variables |
-| "What would [adjacent expert] say is wrong?" | Cross-domain stress test |
+|---|---|
+| What would make the opposite true? | Forces a falsification mindset |
+| What am I *not* asking (because it is uncomfortable)? | Surfaces taboo variables |
+| What would an adjacent expert say is wrong here? | Cross-domain stress test |
 
-**Step 2: Layer 1 — Assumption Archaeology (15 min)**
+**Step 2 — Layer 1: Assumption Archaeology (≈15 min)**
 
 | Name | Stated Model | Hidden Assumptions | Blind Spots | Career Incentive | Falsifiable Prediction |
-|------|------------|-------------------|-------------|------------------|----------------------|
-| Andrew Ng | Data-centric AI | Quality > size | Underestimates compute | Corporate AI labs, courses | "Data labeling beats scale" — testable on benchmarks |
-| Gary Kasparov | Compute-as-strategy | Scaling laws dominate | Ignores data bottlenecks | Tech advisory, speech fees | "Exa-scale by 2026" — verify timeline |
+|---|---|---|---|---|---|
+| Expert A | Data-centric AI | Quality > size | Underestimates compute | Corporate labs, courses | "Data labeling beats scale" — testable on benchmarks |
+| Expert B | Compute-as-strategy | Scaling laws dominate | Ignores data bottlenecks | Advisory, speaking fees | "Exa-scale by 2026" — verify timeline |
 
-**Filter:** Who benefits from this model being true?
+**Filter:** *Who benefits from this model being true?*
 
-**Step 3: Layer 2 — Live Ammunition (10 min)**
+**Step 3 — Layer 2: Live Ammunition (≈10 min)**
 
-| Fault Line | Position A | Position B | Burden of Proof | Who's Betting $/Rep? | Narrative Power | Unsaid Motive |
-|------------|-----------|-----------|------------------|---------------------|-----------------|---------------|
-| Centralized vs decentralized AI control | Safety requires central oversight | Decentralized prevents capture | On centralizers: prove safety | OpenAI ($90B), Stability AI ($100M) | Altman captured media, regulators | Altman: keep regulatory moat; Vitalik: keep crypto relevant |
+| Fault Line | Position A | Position B | Burden of Proof | Who is betting $ / rep? | Narrative Power | Unsaid Motive |
+|---|---|---|---|---|---|---|
+| Centralized vs decentralized AI control | Safety requires central oversight | Decentralization prevents capture | On A: prove safety | Frontier labs vs open ecosystems | A captures media, regulators | A: regulatory moat; B: relevance |
 
-**Key:** 60/40 debates = max learning. 90/10 = investigate the 10% (alpha lives there).
+**Heuristic:** 60/40 debates yield maximum learning. 90/10 debates — investigate the 10%; alpha lives there.
 
-**Step 4: Layer 3 — Shadow Variables (10 min)**
+**Step 4 — Layer 3: Shadow Variables (≈10 min)**
 
 | Category | Inquiry |
-|----------|---------|
-| Lindy Constraints | What 10+ year-old decisions limit this now? |
-| Incentive Cascades | Who downstream is affected by upstream narrative? |
-| Temporal Asymmetry | Which views are rising vs fading? |
-| Geographic Blindspots | How does China/Africa/LatAm approach this? |
-| Failed Attempts | What was tried and died? (Cyc, Semantic Web) |
+|---|---|
+| Lindy constraints | Which 10+ year-old decisions still limit this space? |
+| Incentive cascades | Who downstream is affected by the upstream narrative? |
+| Temporal asymmetry | Which views are rising vs fading? |
+| Geographic blind spots | How do non-Western regions approach this? |
+| Failed attempts | What was tried and died, and why? |
 
-**Step 5: Layer 4 — OctoberXin Pipeline (5 min)**
+**Step 5 — Layer 4: Synthesis Pipeline (≈5 min)**
 
 | Filter | Action |
-|--------|--------|
-| Source Credence | Rank by track record, skin in game, incentive alignment |
-| Controversy Weighting | Symmetric debates (both sides have evidence) > asymmetric |
-| Recency Correction | Weight survived rebuttal over "new hot take" |
-| Contrarian Sizing | Research energy ∝ contrarian × evidence_quality |
+|---|---|
+| Source credence | Rank by track record, skin in game, incentive alignment |
+| Controversy weighting | Symmetric debates (both sides have evidence) > asymmetric |
+| Recency correction | Weight views that survived rebuttal over new hot takes |
+| Contrarian sizing | Research energy ∝ contrarian_score × evidence_quality |
 
 ---
 
 ## Output Formats
 
 ### Mental Models Table
+
 ```
 | Name | Model | Assumptions | Blind Spots | Conflicts |
 |------|-------|-------------|-------------|-----------|
-| Ng | Data-centric | Quality > size | Compute scale | vs Kasparov |
-| Kasparov | Compute-first | Scaling dominates | Data pipes | vs Ng |
 ```
 
 ### Debate Mapping Table
+
 ```
 | Fault Line | Position A | Position B | Evidence A | Evidence B | Actors |
 |------------|------------|------------|------------|------------|--------|
-| Centralized vs decentral | Central safety | Decentral prevents capture | OpenAI framework | DAO experiments | Altman, Buterin |
 ```
 
 ### Non-Obvious Expansion
+
 ```
-Cross-domain: Air-traffic control (coordination), electrical grids (resilience)
-Second-order: Cheap agents → attention scarcity, not compute scarcity
-Hidden: Developer friction (clicks to deploy)
-Adjacent: Game theory, cognitive neuroscience
+Cross-domain:  <analogies from other fields>
+Second-order:  <downstream effects>
+Hidden:        <variables no one is tracking>
+Adjacent:      <related domains worth reading>
 ```
 
 ---
 
-## Example: "AI Agent Infrastructure"
+## Worked Example — "AI Agent Infrastructure"
 
 ### Layer 1 — Mental Models
 
 | Name | Model | Hidden Assumptions | Blind Spots | Career Incentive | Falsifiable Prediction |
-|------|-------|-------------------|-------------|------------------|----------------------|
-| **Andrew Ng** | Data-centric AI | 1. Quality > model size<br>2. Iterative labeling ROI | • Compute-scale effects<br>• Labeled data availability | Corporate AI labs, online courses | "Data-centric beats scale on benchmarks" |
-| **Gary Kasparov** | Compute-as-strategy | 1. Scaling laws dominate<br>2. First to exa-scale wins | • Data pipeline bottlenecks<br>• Regulatory friction | Tech advisory, speaking fees | "Exa-scale by 2026" |
-| **Timnit Gebru** | Stochastic parrots | 1. LLMs amplify bias<br>2. Deployment = harm amplification | • Emergent capabilities<br>• "Harm" operationalization | Academic freedom, DAIR Institute | "LLMs show measurable bias amplification" |
-| **Vitalik Buterin** | Crypto-economic agency | 1. Agents need economic incentives<br>2. Decentralization prevents capture | • Crypto adoption readiness<br>• Latency constraints | Ethereum ecosystem, Web3 credibility | "Token economies coordinate agents" |
-| **Sam Altman** | Centralized safety | 1. Frontier requires centralized oversight<br>2. Gradual deployment reduces risk | • Single point of failure<br>• Innovation stifling | OpenAI ($90B), regulatory moat | "Centralized oversight prevents catastrophe" |
+|---|---|---|---|---|---|
+| Data-centric camp | Quality data > model size | Iterative labeling ROI | Compute-scale effects | Labs, courses | "Data-centric beats scale on benchmarks" |
+| Compute-first camp | Scaling laws dominate | First to exa-scale wins | Data pipeline bottlenecks | Advisory, speaking | "Exa-scale by <year>" |
+| Harm-centric camp | LLMs amplify bias | Deployment = harm amplification | Emergent capabilities | Academic, institutional | "Measurable bias amplification in production" |
+| Crypto-economic camp | Agents need economic incentives | Decentralization prevents capture | Adoption readiness, latency | Web3 ecosystem | "Token economies coordinate agents" |
+| Centralized-safety camp | Frontier needs central oversight | Gradual deployment reduces risk | Single point of failure | Frontier lab valuations | "Central oversight prevents catastrophe" |
 
 ### Layer 2 — Debate Mapping
 
-| Fault Line | Position A | Position B | Burden of Proof | Betting $/Rep | Narrative Power | Unsaid Motive |
-|------------|------------|------------|-----------------|---------------|-----------------|---------------|
-| **Centralized vs decentralized control** | "Safety requires central oversight" | "Decentralization prevents regulatory capture" | On A: prove safety gains<br>On B: prove coordination works | OpenAI ($90B), Anthropic; DAOs, crypto VCs | Altman: captured media & regulators; Buterin: crypto-native audience | Altman: regulatory moat; Buterin: keep crypto relevant |
-| **Open vs closed weights** | "Open-source accelerates safety research" | "Closed-source limits dangerous access" | On A: prove safety benefits<br>On B: prove misuse prevention | Meta (reputation), HuggingFace; OpenAI, Anthropic (safety narratives) | LeCun loud on open; Altman quiet on closed | LeCun: differentiate from OpenAI; Altman: protect valuation |
+| Fault Line | Position A | Position B | Burden of Proof | Betting $ / Rep | Narrative Power | Unsaid Motive |
+|---|---|---|---|---|---|---|
+| Centralized vs decentralized control | Safety requires central oversight | Decentralization prevents capture | On A: prove safety gains; on B: prove coordination | Frontier labs vs DAOs, crypto VCs | A captures media, regulators | A: regulatory moat; B: keep crypto relevant |
+| Open vs closed weights | Open accelerates safety research | Closed limits misuse | On A: prove safety benefit; on B: prove misuse prevention | Open-source labs vs closed labs | Open-source loud; closed quiet | Differentiation vs valuation protection |
 
 ### Layer 3 — Shadow Variables
 
-**Lindy Constraints:**
-- Web2 platform economics (winner-take-all) baked into agent design assumptions
-- GPL/copyleft from early open source still shapes "open" vs "closed" theology
+**Lindy constraints:** Web2 winner-take-all economics baked into agent design assumptions. Early open-source theology still shapes "open vs closed" framing.
 
-**Incentive Cascades:**
-- VCs fund agent startups → startups need growth → growth requires users → users need simple UIs → complex safety features deprioritized
+**Incentive cascades:** VC funds startup → startup needs growth → growth requires simple UI → complex safety features deprioritized.
 
-**Temporal Asymmetry:**
-- Rising: Skepticism of "agents as apps" (platform risk)
-- Fading: "Agents will replace apps" (Apple/Google ecosystem lock-in underestimated)
+**Temporal asymmetry:**
+- Rising: skepticism of "agents as apps" (platform risk).
+- Fading: "agents will replace apps" (ecosystem lock-in underestimated).
 
-**Geographic Blindspots:**
-- China: State-controlled agents as social stability tools (different safety paradigm)
-- Africa: Mobile-first agent deployment, bandwidth constraints ignored by Western devs
-- LatAm: Crypto-native agent ecosystems bypassing traditional finance
+**Geographic blind spots:**
+- State-controlled deployment as a social-stability lever (different safety paradigm).
+- Mobile-first, bandwidth-constrained deployment (ignored by Western designs).
+- Crypto-native ecosystems bypassing traditional finance.
 
-**Failed Attempts:**
-| Attempt | Why It Failed | Lesson for Agents |
-|---------|---------------|-----------------|
-| Cyc | Hand-crafted ontology couldn't scale | Pure symbolic agents don't work |
+**Failed attempts:**
+
+| Attempt | Why it failed | Lesson for agents |
+|---|---|---|
+| Cyc | Hand-crafted ontology could not scale | Pure symbolic agents do not work |
 | Semantic Web | RDF complexity killed adoption | Interoperability requires simplicity |
-| Expert Systems | Brittle rules, no learning | Agents need continuous adaptation |
-| Clippy | Intrusive, not useful | UX matters more than capability |
+| Expert systems | Brittle rules, no learning | Agents need continuous adaptation |
+| Intrusive assistants | UX friction outweighed capability | UX matters more than raw capability |
 
-### Layer 4 — OctoberXin Synthesis
+### Layer 4 — Synthesis
 
-**Signal-to-Noise:**
-- High: NeurIPS/ICML papers, dedicated panels (AI Safety Summit), historical tech adoption curves
-- Low: Twitter hot-takes without citations, VC hype threads
+**Signal-to-noise:** peer-reviewed papers and dedicated panels are high signal; anonymous hot takes and hype threads are low signal.
 
-**Controversy Weighting:**
+**Controversy weighting:**
+
 | Debate | Symmetry | Weight |
-|--------|----------|--------|
-| Centralized vs decentralized | High (both have evidence) | 🔴 High priority |
-| Open vs closed weights | Low (safety side hypothetical) | 🟡 Medium priority |
-| Economic incentives | Medium (crypto evidence early) | 🟡 Medium priority |
+|---|---|---|
+| Centralized vs decentralized | High — both sides have evidence | High priority |
+| Open vs closed weights | Low — one side largely hypothetical | Medium |
+| Economic incentives | Medium — evidence still early | Medium |
 
-**Contrarian Position Sizing:**
-- High research energy: "Agents won't replace apps" (rising, evidence building)
-- Medium energy: "Decentralized agents viable" (contrarian, evidence mixed)
-- Low energy: "AGI imminent via agents" (consensus, low info value)
-
----
-
-## OASIS Swarm Integration
-
-| Agent | Role |
-|-------|------|
-| **Octavian** | Framework invoker, synthesis layer |
-| **OctoberXin** | Deep research execution per layer |
-| **Halloween** | Pipeline automation, visualization |
-| **October** | Routing, aggregation |
-
-**Parallel Pattern:**
-1. Spawn OctoberXin × 3 (Layers 1, 2, 3 simultaneously)
-2. Aggregate outputs
-3. Run Layer 4 synthesis
-4. Route to Octavian for final brief
+**Contrarian position sizing:**
+- High research energy: "agents will not replace apps" (rising, evidence building).
+- Medium: "decentralized agents viable" (contrarian, mixed evidence).
+- Low: "AGI imminent via agents" (consensus, low information value).
 
 ---
 
-## Output Locations
+## Parallel Execution Pattern
 
-- Skill file: `~/.openclaw/workspace/skills/logic-questioning-model/SKILL.md`
-- Research logs: `memory/research/YYYY-MM-DD-{topic-slug}.md`
-- GitHub (private): https://github.com/0x-wzw/skepsis
+For time-boxed research, run Layers 1–3 in parallel (independent subagents or research passes), then execute Layer 4 as a synthesis pass over the merged output.
+
+1. Fan out: L1, L2, L3 simultaneously.
+2. Aggregate: merge tables, deduplicate sources.
+3. Synthesize: run Layer 4 filters over the merged set.
+4. Brief: produce final output in the caller's preferred format.
 
 ---
 
 ## Versions
 
 | Version | Status | Description |
-|---------|--------|-------------|
-| v1.0 | ✅ Stable | Three-layer core (Mental Models, Debates, Non-Obvious) |
-| v2.0 | ✅ Stable | + Layer 0, Incentives, Shadow Variables, Intelligence Pipeline |
+|---|---|---|
+| v1.0 | Stable | Three-layer core (mental models, debates, non-obvious) |
+| v2.0 | Stable | Adds Layer 0, incentive tracking, shadow variables, synthesis pipeline |
 
 ---
 
 ## Credits
 
-- **Octavian:** Framework architecture, macro/policy integration
-- **OctoberXin:** Intelligence pipeline, signal processing
-- **Cheng Lou:** Text layout inspiration (Pretext)
-
-**For Z.**
+Framework architecture and macro/policy integration by Octavian. Intelligence-pipeline and signal-processing design contributed under the OctoberXin collaboration. Text-layout inspiration from Cheng Lou (Pretext).

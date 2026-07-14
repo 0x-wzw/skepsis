@@ -1,13 +1,12 @@
 {
   "name": "skepsis",
   "version": "1.0.0",
-  "description": "OpenClaw skill",
+  "description": "SKEPSIS — surgical inquiry framework, packaged as a platform-agnostic agent skill",
   "scripts": {
-    "lint": "echo \"No lint configured — add eslint or prettier\"",
-    "test": "echo \"No tests configured\"",
-    "build": "echo \"No build step — skill is documentation-based\"",
-    "validate": "node -e \"const s = require(\x27./skill.json\x27); console.log(JSON.stringify(s, null, 2))\""
+    "lint": "echo \"No lint configured — skill is documentation-based\"",
+    "test": "echo \"No tests configured — skill is documentation-based\"",
+    "build": "echo \"No build step — skill is documentation-based\""
   },
-  "keywords": ["openclaw", "skill"],
+  "keywords": ["agent-skill", "research", "inquiry", "framing"],
   "license": "MIT"
 }
