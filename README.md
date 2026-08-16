@@ -22,6 +22,12 @@ Instead of answering a question directly, SKEPSIS interrogates the question itse
 
 The output is a single **SKEPSIS Briefing** — a sourced markdown document that surfaces what you should actually pay attention to.
 
+### What's inside
+
+- **Preflight** — orient on the topic's source of truth before interrogating: consult the canonical corpus first, never fork a second knowledge base, and enforce any structured output at write time (a schema nobody measures drifts back within weeks).
+- **Operational scoring** — when the briefing must be auditable, score claims on the same axes a production intelligence pipeline uses: source tiers (Primary 5 / Secondary 3 / Tertiary 1), a Novelty–Credibility–Actionability–Durability signal rubric, and perspective axes (tech / policy / economic / geography) to prove a debate is genuinely two-sided.
+- **Self-audit** — a diversity checklist and red-flag list before delivery, built on the premise that *unanimity on a contested topic is a sampling failure, not consensus*.
+
 ---
 
 ## Files

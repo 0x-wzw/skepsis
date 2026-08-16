@@ -1,7 +1,7 @@
 ---
 name: skepsis
 description: Surgical inquiry framework for research. Use before synthesis on complex, multidisciplinary, or high-stakes topics where sources disagree and blind spots are likely. Surfaces mental models, active debates, hidden incentives, and shadow variables. Not for simple factual lookups, tutorials, or quick summaries.
-version: 2.0.0
+version: 2.1.0
 ---
 
 # SKEPSIS — Surgical Inquiry Framework
@@ -30,6 +30,33 @@ A research interrogation framework that maps the intellectual battlefield — me
 - A web search or research capability (any provider)
 - A way to persist notes and cite sources across steps
 - 10–20 minutes for the full protocol
+
+---
+
+## Preflight — orient before you interrogate
+
+Before running any layer, establish the **source of truth** for the topic. The
+vault's knowledge protocol is explicit about this, and it transfers directly to
+research:
+
+1. **Consult the canonical source first.** If the topic lives in an existing
+   knowledge base, wiki, or corpus, read *that* before synthesizing — do not
+   re-derive what is already settled. Treat it as the source of truth.
+2. **Never fork a second knowledge base.** Promote findings forward into the
+   canonical store and link back to it; do not start a competing one.
+3. **A schema nobody measures drifts back within weeks.** If you are maintaining
+   a structured output (frontmatter, a table, a taxonomy), enforce it at write
+   time — not with a linter that notices the drift a week later. Requirements
+   that nothing measures are decoration.
+4. **Don't store what the path already says.** If a claim's position is a pure
+   function of where it lives (folder, section, source), a stored copy of that
+   position adds no information and only creates something to drift out of sync.
+5. **One meaning per field.** If a single label carries two vocabularies at once
+   (e.g. a lifecycle value *and* a pipeline value), any filter on it mixes two
+   unrelated things. Split them.
+6. **Never backfill a date you do not have.** A missing date advertises its own
+   ignorance; a wrong one does not — and it silently corrupts every age-based
+   computation downstream.
 
 ---
 
@@ -127,6 +154,75 @@ Answer these *before* searching:
 | Controversy weighting | Symmetric debates (both sides have evidence) > asymmetric |
 | Recency correction | Weight views that survived rebuttal over new hot takes |
 | Contrarian sizing | Research energy ∝ contrarian_score × evidence_quality |
+
+### Operational Scoring
+
+The four filters above are qualitative. When the briefing must be auditable, score
+each claim on the same axes the intelligence pipeline uses:
+
+**Source tiers** — concrete credibility weights for the *Source credence* filter:
+
+| Tier | Definition | Examples | Weight |
+|------|-----------|----------|--------|
+| Primary | Publishes its own research/decisions | arXiv, RAND, EU AI Act, a company's own filings | 5 |
+| Secondary | Analyses primary sources | Stratechery, MIT Tech Review, peer panels | 3 |
+| Tertiary | Aggregates or rewrites | Google News, Hacker News, Reddit | 1 |
+
+**Signal rubric** — score each candidate claim 0–5 on four axes (max 20):
+
+| Axis | Question |
+|------|----------|
+| Novelty | New information, or a rehash of the other items? |
+| Credibility | Primary/verifiable source, or an aggregator rewrite? |
+| Actionability | Is there something concrete to do or decide? |
+| Durability | Will this still matter in 6 months? |
+
+Signal ≥13, medium 10–12, noise ≤9. A briefing's **signal ratio** (signal ÷ items
+scored) is a health metric — if it sits far below ~15%, the topic is saturated or
+the sources are weak.
+
+**Perspective axes** — for the L2 debate map, label each side on up to four axes
+so you can see whether the debate is genuinely two-sided:
+
+| Axis | Values |
+|------|--------|
+| tech | accelerationist · safety_first · skeptic · pragmatic |
+| policy | progressive · centrist · libertarian · conservative |
+| economic | keynesian · monetarist · austrian · development |
+| geography | western · global_south · china · europe |
+
+A debate is balanced when at least two values appear on its expected axis. One
+value is a single-perspective risk no matter how many sources repeat it.
+
+### Self-Audit — before you call it done
+
+The bias pipeline runs on a hard premise: **on any genuinely contested topic,
+unanimity in the capture set is evidence of a sampling failure, not of
+consensus.** Apply the same to your briefing.
+
+Diversity checklist — every briefing must pass before delivery:
+
+- [ ] At least 2 opposing viewpoints represented
+- [ ] At least 1 Global South perspective (if applicable)
+- [ ] At least 1 non-venture-backed voice (if a business topic)
+- [ ] At least 1 skeptic voice (if a hype-heavy topic)
+- [ ] Source diversity score >6/10 — two opposing perspectives earn most of the
+      credit deliberately; the goal is disagreement, not exhaustive enumeration
+
+Red flags — stop and widen the search when any hold:
+
+- 🚩 All sources agree on a contested topic
+- 🚩 All sources come from one geographic region
+- 🚩 All sources are funded by the same kind of entity
+- 🚩 No credible skeptic appears on a hype-heavy topic
+- 🚩 More than half the source hosts are **unclassified** — an unlabelled source
+      is invisible to the score, so a corpus of unknowns can look neutral while
+      being uniform. Flag unclassified sources explicitly; never weight them as
+      if they were neutral.
+
+Provenance — every claim carries a source, a date, and (where known) which
+agent/machine produced it. Never backfill a date you do not have: a missing date
+advertises its own ignorance; a wrong one does not.
 
 ---
 
@@ -236,6 +332,7 @@ For time-boxed research, run Layers 1–3 in parallel (independent subagents or 
 |---|---|---|
 | v1.0 | Stable | Three-layer core (mental models, debates, non-obvious) |
 | v2.0 | Stable | Adds Layer 0, incentive tracking, shadow variables, synthesis pipeline |
+| v2.1 | Stable | Adds preflight orientation, operational scoring (source tiers, signal rubric, perspective axes), and a self-audit diversity checklist |
 
 ---
 
