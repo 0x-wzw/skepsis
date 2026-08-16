@@ -24,6 +24,8 @@ The output is a single **SKEPSIS Briefing** — a sourced markdown document that
 
 ### What's inside
 
+- **Johari-window objective** — the whole protocol is a Johari expansion: grow the **Open** quadrant (settled, defensible claims) by shrinking **Blind** (what the field sees but you miss), **Hidden** (what the field suppresses), and **Unknown** (what nobody has surfaced). The deliverable names what shrank in each quadrant.
+- **True-negative indicators** — the falsification engine. For every claim, name the single observable fact that would refute it, then validate it as *disconfirming*, *observable*, and *not explained away*. A claim with no true negative yet found is untested, not confirmed.
 - **Preflight** — orient on the topic's source of truth before interrogating: consult the canonical corpus first, never fork a second knowledge base, and enforce any structured output at write time (a schema nobody measures drifts back within weeks).
 - **Operational scoring** — when the briefing must be auditable, score claims on the same axes a production intelligence pipeline uses: source tiers (Primary 5 / Secondary 3 / Tertiary 1), a Novelty–Credibility–Actionability–Durability signal rubric, and perspective axes (tech / policy / economic / geography) to prove a debate is genuinely two-sided.
 - **Self-audit** — a diversity checklist and red-flag list before delivery, built on the premise that *unanimity on a contested topic is a sampling failure, not consensus*.

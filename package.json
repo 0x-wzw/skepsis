@@ -1,6 +1,6 @@
 {
   "name": "skepsis",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "SKEPSIS — surgical inquiry framework, packaged as a platform-agnostic agent skill",
   "type": "module",
   "scripts": {

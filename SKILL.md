@@ -1,7 +1,7 @@
 ---
 name: skepsis
 description: Surgical inquiry framework for research. Use before synthesis on complex, multidisciplinary, or high-stakes topics where sources disagree and blind spots are likely. Surfaces mental models, active debates, hidden incentives, and shadow variables. Not for simple factual lookups, tutorials, or quick summaries.
-version: 2.1.0
+version: 2.2.0
 ---
 
 # SKEPSIS — Surgical Inquiry Framework
@@ -81,6 +81,112 @@ Adds Layer 0 (falsify the premise first), incentive tracking on L1/L2, and Layer
 | **L2** | Live ammunition | Narrative power and unsaid motives |
 | **L3** | Shadow variables | Failed attempts, geographic blind spots |
 | **L4** | Synthesis pipeline | Signal filtering, contrarian sizing |
+
+---
+
+## The Johari Frame — what the layers are for
+
+The whole protocol is a **Johari-window expansion**. The Johari window splits
+what is known about a topic into four quadrants, and the objective of a SKEPSIS
+run is to **grow the Open quadrant by shrinking the other three**:
+
+| Quadrant | Known to the field? | Known to you? | The failure it hides | Layer that attacks it |
+|----------|--------------------|---------------|----------------------|----------------------|
+| **Open** | Yes | Yes | — (the goal) | L4 consolidates here |
+| **Blind** | Yes | No | You miss what others already see | L1 (blind spots), L3 (geographic) |
+| **Hidden** | No | Yes | The field suppresses what you know | L0 (taboo), L2 (unsaid motives) |
+| **Unknown** | No | No | Nobody has surfaced it yet | L0 (opposite), L3 (failed attempts) |
+
+Each layer maps to a quadrant it is responsible for shrinking:
+
+- **L0** attacks **Hidden** (uncomfortable questions) and **Unknown** (the
+  opposite of the premise).
+- **L1** attacks **Blind** — the thought leaders' blind spots are the field's
+  blind spots.
+- **L2** attacks **Hidden** — unsaid motives and narrative power are what the
+  field knows but does not say.
+- **L3** attacks **Unknown** — geographic blind spots, failed attempts, and
+  second-order effects are the frontier nobody has mapped.
+- **L4** consolidates the survivors into **Open** — the settled, defensible core.
+
+**Measure the expansion.** Before you start, list what you believe is in the
+Open quadrant (the claims you take as settled). After L4, list what moved in.
+A run that adds nothing to Open — or only re-arranges what was already there —
+has not expanded the window; it has re-confirmed it. The deliverable should
+name, for each quadrant, what shrank and by how much.
+
+---
+
+## True-Negative Indicators — the falsification engine
+
+A **true-negative indicator** is an observable fact that, if it appeared, would
+refute a claim or model. Finding and validating these is the concrete form of
+Layer 0's "what would make the opposite true?" — and it is the highest-leverage
+work in the protocol, because a validated true negative is worth more than any
+number of confirming examples.
+
+### What counts as a true negative
+
+A disconfirming signal, not a mere absence of evidence. Three properties:
+
+| Property | Test | A weak version fails because… |
+|----------|------|------------------------------|
+| **Disconfirming** | If observed, the claim is falsified — not just made less likely | It only nudges the probability |
+| **Observable** | It can be checked against a real, findable fact | It is unfalsifiable or untestable |
+| **Not explained away** | The model's defenders cannot absorb it as a special case | It is already rationalized away |
+
+### How to find them
+
+For every claim that survives L1–L3, ask the **refutation question**:
+
+> *"What single observable fact, if it appeared tomorrow, would force me to
+> abandon this claim?"*
+
+Generate candidates from each quadrant:
+
+- **From the claim's own logic** — what does the model *predict* that would be
+  surprising if true? A prediction that is indistinguishable from the null is
+  not a true negative.
+- **From the opposite premise** (L0) — the strongest true negative is usually
+  the thing that would make the opposite true.
+- **From the field's own history** — prior failed attempts (L3) are the field's
+  own true negatives, already validated by experience.
+- **From adjacent fields** — an adjacent expert's objection (L0) is often a
+  ready-made disconfirming indicator.
+
+### How to validate them
+
+A candidate is not a true negative until it passes all three tests. Run each
+candidate through the table above, and record the result:
+
+| Indicator | Disconfirming? | Observable? | Not explained away? | Verdict |
+|-----------|----------------|-------------|----------------------|---------|
+| *candidate* | yes/no + why | yes/no + how to check | yes/no + who rationalizes it | **validated** / rejected |
+
+**Validate against the source, not the summary.** A true negative that only
+holds against a strawman of the claim is worthless. Check it against the
+strongest available statement of the claim — the same discipline as the
+*Source credence* filter in L4.
+
+### How to use them
+
+- **As the L0 filter.** Carry the validated true negatives forward as the
+  sharpest test for every source in L1–L3. A source that survives a validated
+  true negative is worth more than one that was never tested.
+- **As the recency-correction anchor.** In L4, a claim that has *survived* a
+  validated true negative is the strongest kind of survivor — weight it up.
+  A claim with **no** true negative yet found is untested, not confirmed;
+  down-weight it regardless of how many sources repeat it.
+- **As the deliverable's spine.** The briefing's L0 section should end with a
+  short table of validated true negatives — the facts that would kill the
+  briefing's own conclusions. If you cannot name any, the briefing is not yet
+  falsifiable.
+
+> **The silent-zero trap.** A scoring system reports confidently on an empty
+> sample. If your search returns no true negatives at all, that is not evidence
+> the claim is strong — it is evidence you have not looked hard enough, or your
+> sources all share one prior. Treat "no disconfirming evidence found" as a
+> red flag, not a green one.
 
 ---
 
@@ -251,6 +357,24 @@ Hidden:        <variables no one is tracking>
 Adjacent:      <related domains worth reading>
 ```
 
+### Johari Expansion
+
+```
+Open (before):  <claims you took as settled>
+Open (after):   <what moved in after L4>
+Blind shrank:   <what you now see that you missed>
+Hidden shrank:  <what the field now says that it suppressed>
+Unknown shrank: <what was surfaced that nobody had mapped>
+```
+
+### True-Negative Indicators
+
+```
+| Indicator | Disconfirming? | Observable? | Not explained away? | Verdict |
+|-----------|----------------|-------------|----------------------|---------|
+| <fact that would refute the claim> | yes + why | yes + how to check | yes + who rationalizes it | validated |
+```
+
 ---
 
 ## Worked Example — "AI Agent Infrastructure"
@@ -333,6 +457,7 @@ For time-boxed research, run Layers 1–3 in parallel (independent subagents or 
 | v1.0 | Stable | Three-layer core (mental models, debates, non-obvious) |
 | v2.0 | Stable | Adds Layer 0, incentive tracking, shadow variables, synthesis pipeline |
 | v2.1 | Stable | Adds preflight orientation, operational scoring (source tiers, signal rubric, perspective axes), and a self-audit diversity checklist |
+| v2.2 | Stable | Adds the Johari-window objective (grow Open by shrinking Blind/Hidden/Unknown) and the true-negative-indicator falsification engine |
 
 ---
 
