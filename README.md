@@ -19,6 +19,7 @@ Instead of answering a question directly, SKEPSIS interrogates the question itse
 | **L2** | Live ammunition | What are the active fault lines, and who is betting on each side? |
 | **L3** | Shadow variables | What non-obvious forces (Lindy, incentives, geography) shape the space? |
 | **L4** | Synthesis pipeline | Which signals survive filtering, and which narratives to discount? |
+| **L5** | Close the loop | What durable lesson compounds, and what is the next question? |
 
 The output is a single **SKEPSIS Briefing** — a sourced markdown document that surfaces what you should actually pay attention to.
 
@@ -29,6 +30,7 @@ The output is a single **SKEPSIS Briefing** — a sourced markdown document that
 - **Preflight** — orient on the topic's source of truth before interrogating: consult the canonical corpus first, never fork a second knowledge base, and enforce any structured output at write time (a schema nobody measures drifts back within weeks).
 - **Operational scoring** — when the briefing must be auditable, score claims on the same axes a production intelligence pipeline uses: source tiers (Primary 5 / Secondary 3 / Tertiary 1), a Novelty–Credibility–Actionability–Durability signal rubric, and perspective axes (tech / policy / economic / geography) to prove a debate is genuinely two-sided.
 - **Self-audit** — a diversity checklist and red-flag list before delivery, built on the premise that *unanimity on a contested topic is a sampling failure, not consensus*.
+- **Close the loop** — Layer 5 turns the one-shot run into a cycle: distill the durable lesson, promote it forward and link back, update the true-negative ledger, and name the next question. The measure is whether the next briefing is *faster and sharper* because this one existed.
 
 ---
 

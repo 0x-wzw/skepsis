@@ -111,6 +111,17 @@ Apply, in order, to everything Layers 1–3 produced:
 
 Red flags — stop and widen when any hold: all sources agree on a contested topic; all sources from one region; all sources funded by the same kind of entity; no credible skeptic on a hype-heavy topic; more than half the source hosts are unclassified (an unlabelled source is invisible to the score — flag it, never weight it as neutral).
 
+### Layer 5 — Close the loop
+
+After the briefing is written, before you move on:
+
+1. **Distill the durable lesson** — the one or two things true *beyond* this topic, as a single imperative sentence.
+2. **Promote forward, link back** — put the lesson in the canonical store, not the briefing; link both ways. Never fork a second knowledge base.
+3. **Update the true-negative ledger** — record the validated true negatives where the next run can find them, so a claim already tested is not re-tested from zero.
+4. **Feed the next cycle** — name the sharpest open question this run exposed. A run that closes every question has stopped too early.
+
+The compounding test: if the next run on a related topic starts from scratch, the loop is broken. The measure of Layer 5 is whether the next briefing is *faster and sharper* because this one existed.
+
 ## Deliverable
 
 Return a single markdown document with these sections, in order:
@@ -141,6 +152,12 @@ Return a single markdown document with these sections, in order:
 - Open (after): <what moved in after L4>
 - Blind / Hidden / Unknown: <what shrank in each quadrant>
 
+## L5 — Loop close
+- Durable lesson: <one imperative sentence, true beyond this topic>
+- Promoted to: <canonical store + backlink>
+- True-negative ledger: <what was recorded for the next run>
+- Next question: <the sharpest open thread>
+
 ## Sources
 <numbered list of citations used above>
 ```
@@ -149,7 +166,7 @@ Return a single markdown document with these sections, in order:
 
 Stop and return the briefing when **any** of these hold:
 
-- All five layers produced non-empty output and every claim has a source.
+- All six layers produced non-empty output and every claim has a source.
 - Additional searches on the current topic are returning only duplicates.
 - 20 minutes of wall-clock research have elapsed.
 

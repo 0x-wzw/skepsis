@@ -1,7 +1,7 @@
 ---
 name: skepsis
 description: Surgical inquiry framework for research. Use before synthesis on complex, multidisciplinary, or high-stakes topics where sources disagree and blind spots are likely. Surfaces mental models, active debates, hidden incentives, and shadow variables. Not for simple factual lookups, tutorials, or quick summaries.
-version: 2.2.0
+version: 2.3.0
 ---
 
 # SKEPSIS — Surgical Inquiry Framework
@@ -81,6 +81,7 @@ Adds Layer 0 (falsify the premise first), incentive tracking on L1/L2, and Layer
 | **L2** | Live ammunition | Narrative power and unsaid motives |
 | **L3** | Shadow variables | Failed attempts, geographic blind spots |
 | **L4** | Synthesis pipeline | Signal filtering, contrarian sizing |
+| **L5** | Close the loop | Distill, promote forward, link back, feed the next cycle |
 
 ---
 
@@ -450,6 +451,54 @@ For time-boxed research, run Layers 1–3 in parallel (independent subagents or 
 
 ---
 
+## Layer 5 — Close the Loop (≈5 min)
+
+A briefing that is delivered and forgotten does not compound. Layer 5 turns the
+one-shot run into a **cycle** — the same discipline as the knowledge lifecycle
+(raw → report → distilled → promote forward, link back). Run it after the
+briefing is written, before you move on.
+
+### 1. Distill the durable lesson
+
+Extract the one or two things from this run that are true *beyond* this topic —
+the reusable signal, not the topic-specific detail. Write it as a single
+imperative sentence: *"On contested topics, unanimity is a sampling failure,
+not consensus."* This is the compounding unit; it is what makes the next run
+faster and sharper.
+
+### 2. Promote forward, link back
+
+- **Promote** the durable lesson into the canonical store (the wiki, the
+  knowledge base, the reference corpus) — do not leave it buried in the
+  briefing.
+- **Link back** to the briefing from the promoted note, and to the promoted
+  note from the briefing. A lesson with no backlink is a lesson that will be
+  re-learned from scratch next time.
+- **Never fork a second knowledge base.** The promoted lesson goes into the
+  existing canonical store, not a parallel one.
+
+### 3. Update the true-negative ledger
+
+The validated true negatives from this run are the field's own falsification
+history. Record them where the next run can find them — a claim that already
+survived (or failed) a true negative should not be re-tested from zero. This is
+the same reason the vault keeps a record of confirmed-dead feeds: so they are
+not reintroduced.
+
+### 4. Feed the next cycle
+
+End the run by naming the **next question** — the sharpest open thread this
+briefing exposed. A run that closes every question has not finished; it has
+stopped too early. The next cycle starts from this question, carrying the
+distilled lesson and the true-negative ledger forward.
+
+> **The compounding test.** If the next run on a related topic starts from
+> scratch — re-deriving what this run settled — the loop is broken. The measure
+> of Layer 5 is whether the next briefing is *faster and sharper* because this
+> one existed.
+
+---
+
 ## Versions
 
 | Version | Status | Description |
@@ -458,6 +507,7 @@ For time-boxed research, run Layers 1–3 in parallel (independent subagents or 
 | v2.0 | Stable | Adds Layer 0, incentive tracking, shadow variables, synthesis pipeline |
 | v2.1 | Stable | Adds preflight orientation, operational scoring (source tiers, signal rubric, perspective axes), and a self-audit diversity checklist |
 | v2.2 | Stable | Adds the Johari-window objective (grow Open by shrinking Blind/Hidden/Unknown) and the true-negative-indicator falsification engine |
+| v2.3 | Stable | Adds Layer 5 — close the loop: distill the durable lesson, promote forward and link back, update the true-negative ledger, feed the next cycle |
 
 ---
 

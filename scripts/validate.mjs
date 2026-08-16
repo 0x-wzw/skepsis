@@ -53,7 +53,7 @@ if (!fm) {
 // ---------------------------------------------------------------------------
 console.log('PROMPT.md <-> SKILL.md sync');
 const prompt = read('PROMPT.md');
-const layers = ['Layer 0', 'Layer 1', 'Layer 2', 'Layer 3', 'Layer 4'];
+const layers = ['Layer 0', 'Layer 1', 'Layer 2', 'Layer 3', 'Layer 4', 'Layer 5'];
 for (const layer of layers) {
   if (!skill.includes(layer)) fail(`SKILL.md is missing "${layer}"`);
   if (!prompt.includes(layer)) fail(`PROMPT.md is missing "${layer}"`);
