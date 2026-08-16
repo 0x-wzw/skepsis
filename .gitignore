@@ -11,3 +11,6 @@ credentials.json
 !.env.template
 **/secrets/
 **/.secrets/
+
+# Dependencies
+node_modules/

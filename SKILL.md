@@ -1,6 +1,7 @@
 ---
 name: skepsis
 description: Surgical inquiry framework for research. Use before synthesis on complex, multidisciplinary, or high-stakes topics where sources disagree and blind spots are likely. Surfaces mental models, active debates, hidden incentives, and shadow variables. Not for simple factual lookups, tutorials, or quick summaries.
+version: 2.0.0
 ---
 
 # SKEPSIS — Surgical Inquiry Framework

@@ -2,11 +2,32 @@
   "name": "skepsis",
   "version": "1.0.0",
   "description": "SKEPSIS — surgical inquiry framework, packaged as a platform-agnostic agent skill",
+  "type": "module",
   "scripts": {
-    "lint": "echo \"No lint configured — skill is documentation-based\"",
-    "test": "echo \"No tests configured — skill is documentation-based\"",
-    "build": "echo \"No build step — skill is documentation-based\""
+    "lint": "node scripts/validate.mjs",
+    "test": "node scripts/validate.mjs",
+    "build": "node scripts/validate.mjs"
   },
-  "keywords": ["agent-skill", "research", "inquiry", "framing"],
-  "license": "MIT"
+  "keywords": [
+    "agent-skill",
+    "research",
+    "inquiry",
+    "framing",
+    "interrogation"
+  ],
+  "license": "MIT",
+  "author": "0x-wzw",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0x-wzw/skepsis.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "SKILL.md",
+    "PROMPT.md",
+    "README.md",
+    "LICENSE"
+  ]
 }

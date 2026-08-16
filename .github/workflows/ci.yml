@@ -5,13 +5,14 @@ on:
   pull_request:
     branches: [main, master]
 jobs:
-  ci:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - run: npm run lint
-      - run: npm run test
-      - run: npm run build
+          cache: npm
+      - run: npm ci
+      - name: Validate skill documentation
+        run: npm run lint
